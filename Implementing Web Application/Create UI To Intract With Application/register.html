@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Sign Up | By Code Info</title>
+   <!--<link rel="stylesheet" href="/Static/style.css" />--> 
+
+   <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="signup-box">
+      <h1>Sign Up</h1>
+      <h4>It's free and only takes a minute</h4>
+      <form action="/insert" method="post">
+        <label>First Name</label>
+        <input  name="name" type="text" placeholder="" />
+       
+        <label>Email</label>
+        <input  name="email" type="email" placeholder="" />
+        <label>Password</label>
+        <input name="password" type="password" placeholder="" />
+       <br>
+       <br>
+      
+        <input   type="submit" value="Submit" />
+      <closeform></closeform>
+{{msg}}
+    </form>
+      <p>
+        By clicking the Sign Up button,you agree to our <br />
+        <a href="#">Terms and Condition</a> and <a href="#">Policy Privacy</a>
+      </p>
+    </div>
+    <div  class="box">
+
+      <form    action="/login">
+        <p class="para-2">
+          Already have an account? <input  value="login" type="submit">
+        </p>
+        
+  
+      </form>
+
+     
+    </div>
+   
+   
+   
+
+
+  </body>
+</html>
